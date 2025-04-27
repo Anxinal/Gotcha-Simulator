@@ -1,0 +1,32 @@
+Please read the following instructions before creating a new pool for simulation:
+You shall follow the following format for crating a pool file if u wish a manual entry:
+line 1: [Pool_name]##[number of type of rareness in decimals] (if 90% then input 90, if it is decimal then up to 2.d.p.)
+line 2: [Name of item type 1] [Name of item type 2] ...(There should not be any spacing in each name)
+line 3 : [Rareness 1 probability] [Rareness 2 probability] [Rareness 3 probability]
+
+line 4 onwards: ###[rarity_level]
+[Item name](#event)
+"#event" suggests that this is an event character. If not, omit this part.
+
+For example:
+--------------------
+Star of wishes##3##
+####3 0.05 90 72   -- start climbing prob from 72 draws up until 100% in the 90th draw
+Helia#event  --There should be only one character with maximum rareness and event followed
+Tricia
+Urga
+###2 10.00 10 9       
+Lucy
+Allemond
+Very long sword
+###1 89.95
+long sword
+----------------------
+This is a valid pool info input
+
+1.The probability of each item in each pool is evenly spread out for the same rarity
+2. There could only be one type of guarantee item and the probability of drawing the guarantee item climbs 
+by 5% by default from 20 pools before guarantee
+3.
+
+

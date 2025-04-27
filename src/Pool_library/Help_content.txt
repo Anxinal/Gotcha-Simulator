@@ -1,0 +1,31 @@
+Please read the following instructions before creating a new pool for simulation:
+You shall follow the following format for crating a pool file if u wish a manual entry:
+Part 1: [Pool_name]##[number of type of rarity]##
+Part 2: ####[Rarity number]#[Probability]#([GuaranteePull Ceiling]#[the number of pull where probability starts climbing])#[Name of rarity]
+List of item(one for each line)
+###[Rarity number]#[Probability]#([GuaranteePull Ceiling]#[the number of pull where probability starts climbing])#[Name of rarity]
+List of item(one for each line)
+###... until all rarity info is entered
+
+
+
+For example:
+--------------------
+Star of wishes##3##
+####3 0.05 90 72   -- start climbing prob from 72 draws up until 100% in the 90th draw
+Helia#event  --There should be only one character with maximum rareness and event followed
+Tricia
+Selena
+###2 10.00 10 9       
+Lucy
+Allemond
+Very long sword
+###1 89.95
+long sword
+----------------------
+This is a valid pool info input
+
+1.The probability of each item in each pool is evenly spread out for the same rarity except for the highest where there is any #event item
+2. Guarantee pulls prioritise items with lower rarity levels
+3.#event mark suggests that this item will be selected by a 50% chance for every pull selecting items from this rarity level. If this item is not selected once it will definitely be selected the next time
+#event mark could only appear in the maximum rarity level
